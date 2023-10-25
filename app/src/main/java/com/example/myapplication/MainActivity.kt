@@ -1,43 +1,61 @@
 package com.example.myapplication
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.myapplication.ui.theme.MyApplicationTheme
+import android.widget.Button
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import org.w3c.dom.Text
 
-class MainActivity : ComponentActivity() {
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var listUsers:TextView
+
+    private lateinit var buttonAddUser:Button
+
+    private lateinit var userList:RecyclerView
+
+    private lateinit var userAdapter: UserAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            MyApplicationTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
-                }
-            }
+        setContentView(R.layout.activity_main)
+
+        listUsers = findViewById(R.id.tv_list_users)
+        buttonAddUser = findViewById(R.id.b_add_users)
+        userList = findViewById(R.id.rv_user)
+
+        val layoutManager:LinearLayoutManager = LinearLayoutManager(this)
+        userList.layoutManager = layoutManager
+        userList.setHasFixedSize(true)
+
+        buttonAddUser.setOnClickListener {
+            listUsers.text = "hello"
         }
-    }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-            text = "Hello $name!",
-            modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MyApplicationTheme {
-        Greeting("Android")
+        var users:MutableList<User> = arrayListOf(
+            User("Kostya", "ovovouovryms@gmail.com"),
+            User("Nikita", "dogcatcupoftea@gmail.com"),
+            User("Kostya", "ovovouovryms@gmail.com"),
+            User("Nikita", "dogcatcupoftea@gmail.com"),
+            User("Kostya", "ovovouovryms@gmail.com"),
+            User("Nikita", "dogcatcupoftea@gmail.com"),
+            User("Kostya", "ovovouovryms@gmail.com"),
+            User("Nikita", "dogcatcupoftea@gmail.com"),
+            User("Kostya", "ovovouovryms@gmail.com"),
+            User("Nikita", "dogcatcupoftea@gmail.com"),
+            User("Kostya", "ovovouovryms@gmail.com"),
+            User("Nikita", "dogcatcupoftea@gmail.com"),
+            User("Kostya", "ovovouovryms@gmail.com"),
+            User("Nikita", "dogcatcupoftea@gmail.com"),
+            User("Kostya", "ovovouovryms@gmail.com"),
+            User("Nikita", "dogcatcupoftea@gmail.com"),
+            User("Kostya", "ovovouovryms@gmail.com"),
+            User("Nikita", "dogcatcupoftea@gmail.com")
+        )
+        userAdapter = UserAdapter(users)
+        userList.adapter = userAdapter
     }
-}
+    }
