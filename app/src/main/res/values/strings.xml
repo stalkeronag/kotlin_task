@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="textview">TextView</string>
+    <string name="add_users">Add Users</string>
+    <string name="ip">enter ip users</string>
+    <string name="list_users">list users</string>
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+</resources>
