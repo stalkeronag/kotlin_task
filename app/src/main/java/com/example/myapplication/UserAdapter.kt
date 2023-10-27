@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import org.w3c.dom.Text
 
 class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder> {
 
@@ -24,30 +25,23 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder> {
                 field = value
             }
 
-        private var emailUserTextView:TextView
-            get() = field
-            set(value) {
-                field = value
-            }
+       private var idUserTextView:TextView
+           get() = field
+           set(value) {
+               field = value
+           }
 
-        private var viewHolderIndex:TextView
-            get() = field
-            set(value) {
-                field = value
-            }
 
         constructor(itemView:View) : super(itemView){
 
             nameUserTextView = itemView.findViewById(R.id.tv_user_name_item)
-            emailUserTextView = itemView.findViewById(R.id.tv_user_email_item)
-            viewHolderIndex = itemView.findViewById(R.id.tv_view_holder_user)
+            idUserTextView = itemView.findViewById(R.id.tv_user_id_item)
         }
 
         fun bind(user:User, position: Int)
         {
-            nameUserTextView?.setText(user.name)
-            emailUserTextView?.setText(user.email)
-            viewHolderIndex?.setText(position.toString())
+            nameUserTextView?.setText(user.first_name)
+            idUserTextView?.setText(user.id)
         }
     }
 
