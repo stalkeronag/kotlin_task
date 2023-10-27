@@ -13,6 +13,10 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.w3c.dom.Text
+import java.io.BufferedReader
+import java.io.File
+import java.io.FileReader
+import java.io.IOException
 
 
 class MainActivity : AppCompatActivity() {
@@ -41,8 +45,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Init()
-        val versioApi = "5.154"
-        val token = "vk1.a.zXR5PTs691yUSKduLPp30iSQfGLSaE-1SbS1XhMkmt32clyB64UVOh4-CtHDmnGIFQ9IJF3cIK52pTnKbF-bdAXrZ6ophRqSRxS-9VdtdO62OPdH5T06hLyI8iydApBsjbPorHgV4k-hFm9N4Zop2XyBqpT8v-0nKG1WVsC5ISumhbou6UlCfUfdWQXtVCfS3ZegSyktGWLyQmbKXbdYbQ"
+        val versioApi = getResources().getString(R.string.api_version);
+        val token = getResources().getString(R.string.token_api_vk);
         val userIds = "goophi,idpotcan,id218973646,brinst,id274417249"
         val layoutManager = LinearLayoutManager(this)
 
@@ -78,7 +82,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
     fun Init(){
         commandText = findViewById(R.id.et_command)
         commandInfo = findViewById(R.id.tv_list_users)
