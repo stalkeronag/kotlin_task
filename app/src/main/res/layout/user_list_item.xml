@@ -4,12 +4,27 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_view_holder_user"
-        style="@style/TextAppearance.AppCompat.Title"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_gravity="center_vertical|start"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="42sp"
+            android:text = "@string/id">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv_user_id_item"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:fontFamily="monospace"
+            android:textSize="42sp"/>
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,29 +46,13 @@
             android:fontFamily="monospace"
             android:textSize="42sp"/>
     </LinearLayout>
-
-
-    <LinearLayout
+    <Button
+        android:id="@+id/show_more_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="42sp"
-            android:text = "@string/email">
-
-        </TextView>
-        <TextView
-            android:id="@+id/tv_user_email_item"
-            style="@style/TextAppearance.AppCompat.Title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|start"
-            android:fontFamily="monospace"
-            android:textSize="42sp"/>
-    </LinearLayout>
-
+        android:layout_marginStart="0.5dp"
+        android:gravity="center"
+        android:text="show more" />
 
 
 </LinearLayout>

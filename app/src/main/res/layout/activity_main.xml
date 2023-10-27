@@ -7,7 +7,7 @@
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/er_add_users"
+        android:id="@+id/et_command"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/ip"
@@ -24,6 +24,23 @@
         android:layout_marginStart="0.5dp"
         android:gravity="center"
         android:text="@string/add_users" />
+
+
+    <Button
+        android:id="@+id/b_delete_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0.5dp"
+        android:gravity="center"
+        android:text="@string/delete_user"/>
+
+    <Button
+        android:id="@+id/b_show_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0.5dp"
+        android:gravity="center"
+        android:text="@string/show_users" />
 
     <TextView
         android:id="@+id/tv_list_users"
