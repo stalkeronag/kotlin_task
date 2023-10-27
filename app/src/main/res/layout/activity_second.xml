@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "id:"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:id = "@+id/id_raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text = "first_name:"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:id = "@+id/first_name_raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text = "last_name:"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id ="@+id/last_name_raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "bdate:"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+
+
+        <TextView
+            android:id = "@+id/bdate_raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "home_phone:"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id = "@+id/home_phone_raw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "mobile_phone"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/mobile_phone_id"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
