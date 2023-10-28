@@ -25,7 +25,7 @@
 
 Вводим id пользователя (в данном примере 218973646)
 
-![allUsers](https://github.com/stalkeronag/kotlin_task/assets/86604604/c33c1dac-ef5e-4e93-a62c-f5fbb4f4f4e9)
+![Screenshot_4](https://github.com/stalkeronag/kotlin_task/assets/86604604/c1b3bd07-714e-4515-9b36-6f576690007e)
 
 Результат
 
