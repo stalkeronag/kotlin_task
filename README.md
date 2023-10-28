@@ -41,6 +41,15 @@
 
 ![addUser](https://github.com/stalkeronag/kotlin_task/assets/86604604/bd5ca0e3-8567-4d3b-b9dd-11c25c724892)
 
+# Показ дополнительной информации о пользователе
 
+В списке пользователей есть кнопка show more (для примера кликнем на кнопку под Salavat)
+
+![Screenshot_6](https://github.com/stalkeronag/kotlin_task/assets/86604604/54185bdf-8295-4c7a-811b-f5464ca3e27e)
+
+
+Полная информация о пользователе (показывается в отдельно activity)
+
+![Screenshot_5](https://github.com/stalkeronag/kotlin_task/assets/86604604/045eae63-a33a-4eb1-904c-41015a9bca52)
 
 
