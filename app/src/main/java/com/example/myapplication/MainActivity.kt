@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         Init()
         val versioApi = getResources().getString(R.string.api_version);
         val token = getResources().getString(R.string.token_api_vk);
-        val userIds = "goophi,idpotcan,id218973646,brinst,id274417249"
+        val userIds = "218973646,goophi,idpotcan,brinst,274417249"
         val layoutManager = LinearLayoutManager(this)
 
         userList.layoutManager = layoutManager
@@ -80,7 +80,6 @@ class MainActivity : AppCompatActivity() {
             Thread.sleep(1000)
             userList.adapter = userAdapter
         }
-
     }
     fun Init(){
         commandText = findViewById(R.id.et_command)

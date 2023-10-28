@@ -1,8 +1,11 @@
 package com.example.myapplication
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import org.w3c.dom.Text
@@ -10,7 +13,6 @@ import org.w3c.dom.Text
 class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder> {
 
     private var userList:MutableList<User>
-
 
 
 
@@ -31,17 +33,28 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder> {
                field = value
            }
 
+        private var buttonShowMore: Button
+
+        private var context: Context
 
         constructor(itemView:View) : super(itemView){
-
+            context = itemView.context
             nameUserTextView = itemView.findViewById(R.id.tv_user_name_item)
             idUserTextView = itemView.findViewById(R.id.tv_user_id_item)
+            buttonShowMore = itemView.findViewById(R.id.b_show_more_info)
+
         }
 
         fun bind(user:User, position: Int)
         {
             nameUserTextView?.setText(user.first_name)
             idUserTextView?.setText(user.id)
+
+            buttonShowMore.setOnClickListener{
+                var intent = Intent(context, SecondActivity::class.java)
+                intent.putExtra("user",user)
+                context.startActivity(intent)
+            }
         }
     }
 
