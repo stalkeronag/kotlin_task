@@ -33,32 +33,41 @@ class VkApiRequest {
 
     fun ConvertJsonToUser(jsonUsers:JsonArray):MutableList<User> {
         var list_users = mutableListOf<User>()
-        var list_keys = mutableListOf<String>(
-            "bdate",
-            "mobile_phone",
-            "home_phone"
-        )
+
 
 
         if (jsonUsers != null){
             for(i in 0 until jsonUsers.size()){
                 val jsonObject = jsonUsers[i].asJsonObject
-                for (i in 0 until list_keys.size){
-                    if (jsonObject.get(list_keys[i]) != null){
-                        list_keys[i] = jsonObject.get(list_keys[i]).asString
-                    }
-                    else{
-                        list_keys[i] = "not found"
-                    }
+                var bdate = ""
+                var mobilePhone = ""
+                var homePhone = ""
+                if (jsonObject.get("bdate") != null){
+                    bdate = jsonObject.get("bdate").asString
+                }
+                else{
+                    bdate = "not found"
+                }
+                if (jsonObject.get("mobile_phone") != null){
+                    mobilePhone = jsonObject.get("mobile_phone").asString
+                }
+                else{
+                    mobilePhone = "not found"
+                }
+                if (jsonObject.get("home_phone") != null){
+                    homePhone = jsonObject.get("home_phone").asString
+                }
+                else{
+                    homePhone = "not found"
                 }
                 list_users.add(
                     User(
                         id = jsonObject.get("id").asString,
                         last_name = jsonObject.get("last_name").asString,
                         first_name = jsonObject.get("first_name").asString,
-                        bdate = list_keys[0],
-                        mobile_phone = list_keys[1],
-                        home_phone = list_keys[2]
+                        bdate = bdate,
+                        mobile_phone = mobilePhone,
+                        home_phone = homePhone
                     )
                 )
             }

@@ -47,7 +47,7 @@
             android:textSize="42sp"/>
     </LinearLayout>
     <Button
-        android:id="@+id/show_more_info"
+        android:id="@+id/b_show_more_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="0.5dp"
