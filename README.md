@@ -1,7 +1,7 @@
 # kotlin_task
 # Предварительная настройка
 
-![image](https://github.com/stalkeronag/kotlin_task/assets/86604604/d8c4a322-0116-4078-9b86-9d79d2f66a0c)
+![Screenshot_7](https://github.com/stalkeronag/kotlin_task/assets/86604604/487b447f-ef2a-4fbf-b2a3-dd943ff5ac25)
 
 в token_vk_api введите свой токен доступа (его можно получить https://vkhost.github.io/ для vk.com)
 .в api_version введите версию api 
@@ -48,9 +48,12 @@
 
 ![Screenshot_6](https://github.com/stalkeronag/kotlin_task/assets/86604604/54185bdf-8295-4c7a-811b-f5464ca3e27e)
 
-
 Полная информация о пользователе (показывается в отдельно activity)
 
 ![Screenshot_5](https://github.com/stalkeronag/kotlin_task/assets/86604604/045eae63-a33a-4eb1-904c-41015a9bca52)
 
+# Небольшое обновление 
 
+Добавил кнопку поиска пользователя по id
+
+![Screenshot_8](https://github.com/stalkeronag/kotlin_task/assets/86604604/78a301f9-fb5a-4692-9f1c-e1c59e129b2a)
