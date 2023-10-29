@@ -48,15 +48,12 @@
 
 ![Screenshot_6](https://github.com/stalkeronag/kotlin_task/assets/86604604/54185bdf-8295-4c7a-811b-f5464ca3e27e)
 
-# Небольшое обновление 
-
-Добавил кнопку поиска пользователя по id
-
-![Uploading Screenshot_8.png…]()
-
-
 Полная информация о пользователе (показывается в отдельно activity)
 
 ![Screenshot_5](https://github.com/stalkeronag/kotlin_task/assets/86604604/045eae63-a33a-4eb1-904c-41015a9bca52)
 
+# Небольшое обновление 
 
+Добавил кнопку поиска пользователя по id
+
+![Screenshot_8](https://github.com/stalkeronag/kotlin_task/assets/86604604/78a301f9-fb5a-4692-9f1c-e1c59e129b2a)
