@@ -42,6 +42,14 @@
         android:gravity="center"
         android:text="@string/show_users" />
 
+    <Button
+        android:id="@+id/b_find_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0.5dp"
+        android:gravity="center"
+        android:text="@string/find_user" />
+
     <TextView
         android:id="@+id/tv_list_users"
         android:layout_width="match_parent"

@@ -6,9 +6,12 @@
     <string name="list_users">list users</string>
     <string name="email">Email:</string>
     <string name="api_version">5.154</string>
-    <string name="token_api_vk">vk1.a.re4w4ViB8zZxq0rIzwzCacgBXHXS5uEouCekrwV5nWudD8gX_Kj1ZIMzgA3ftGzOV9WEpc60PkjUw8slK43uN1GkSkqG0zZrNFCxyzcQ2J0EBeSh8s_-j9gctWZcWwHlaXOQJEXF2dr9np3qU_eWlXrBBElzViozg7aerYYDTK_762jMLLH2RHsPnWMxNBD6kl0gPK_o84xCnIT2QrIkwg</string>
+    <string name="token_api_vk">
+        vk1.a.zsbhuA5HSWL3D7bnVXrDmAohdGYMFtvjnQDCBLUMkbPyr4aqQV_HP5q_qkFsrNymXNRSb27O_tOTxj3llbV8ZDD8pEvcapvHxVM6nGB72_I6w72_FQsvWtPMH2btVKYei3MSqPgeoY0TYoicti7yp-rjE19d9uJGLxG9ECqlxABcmG1K3cB_uTSziF9MxgXK6McO503bLmH51uZS_AYYvA
+    </string>
     <string name="id">id:</string>
     <string name="name">Name:</string>
     <string name="delete_user">delete user</string>
     <string name="show_users">show users</string>
+    <string name="find_user">find user</string>
 </resources>
