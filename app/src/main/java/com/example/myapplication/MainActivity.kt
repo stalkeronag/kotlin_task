@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var buttonShowUser:Button
 
+    private lateinit var buttonFindUser:Button
+
     private lateinit var userList:RecyclerView
 
     private lateinit var userAdapter: UserAdapter
@@ -80,6 +82,12 @@ class MainActivity : AppCompatActivity() {
             Thread.sleep(1000)
             userList.adapter = userAdapter
         }
+
+        buttonFindUser.setOnClickListener {
+            commandInfo.text = "find user"
+            userAdapter = UserAdapter(userCrud.FindUsers(commandText.text.toString()))
+            userList.adapter = userAdapter
+        }
     }
     fun Init(){
         commandText = findViewById(R.id.et_command)
@@ -87,6 +95,7 @@ class MainActivity : AppCompatActivity() {
         buttonAddUser = findViewById(R.id.b_add_users)
         buttonShowUser = findViewById(R.id.b_show_users)
         buttonDeleteUser = findViewById(R.id.b_delete_users)
+        buttonFindUser = findViewById(R.id.b_find_users)
         userList = findViewById(R.id.rv_user)
     }
 }
